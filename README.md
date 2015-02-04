@@ -2,11 +2,11 @@ SA38Team07 Uno Project
 
 Softwares Required:
 
-1) Netbeans 8.0
-2) Jersey_SSE Library
-3) Mysql 6.1CE
-4) HTML5
-5) JAVAEE 7
+Netbeans 8.0,
+ Jersey_SSE Library,
+ Mysql 6.1CE,
+ HTML5,
+ JAVAEE 7
 
 
 JDBC Realm:
