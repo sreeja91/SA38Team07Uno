@@ -1,0 +1,29 @@
+#!/bin/bash
+
+NUM=0;
+for I in 0 1 2 3; do 
+	TOP="$((256 * I))"
+	for J in 0 1 2 3 4 5 6 7 8 9 10 11 12 13; do
+		LEFT="$((170 * J))"
+		echo convert -crop 170x256+${LEFT}+${TOP} full_deck.png c${NUM}.png
+		convert -crop 170x256+${LEFT}+${TOP} full_deck.png c${NUM}.png
+		NUM="$((NUM + 1))"
+	done
+done
+
+for I in 4 5 6 7; do
+	TOP="$((256 * I))"
+	for J in 1 1 2 3 4 5 6 7 8 9 10 11 13;  do
+		LEFT="$((170 * J))"
+		echo convert -crop 170x256+${LEFT}+${TOP} full_deck.png c${NUM}.png
+		convert -crop 170x256+${LEFT}+${TOP} full_deck.png c${NUM}.png
+		NUM="$((NUM + 1))"
+	done
+done
+
+TOP="$((256 * 4))"
+LEFT="$((170 * 0))"
+echo convert -crop 170x256+${LEFT}+${TOP} full_deck.png blank.png
+convert -crop 170x256+${LEFT}+${TOP} full_deck.png blank.png
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Game Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <script src="Resources/js/jquery-2.1.1.js" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" href="Resources/css/uno.css" />
+        <link rel="stylesheet" type="text/css" href="Resources/css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="Resources/css/custom.css" />
+        <link  rel="stylesheet" type="text/css" href="Resources/css/bootstrap.css"/>
+        <link href="Resources/css/bootstrap-theme.css" rel="stylesheet" type="text/css"/>
+        <script src="Resources/js/bootstrap.js" type="text/javascript"></script>
+        <script src="Resources/js/tableview.js" type="text/javascript"></script>
+        <script type="text/javascript" src="Resources/js/modernizr.custom.79639.js"></script>
+        <link href="Resources/css/gameview.css" rel="stylesheet" type="text/css"/>
+       
+    </head>
+    <body>
+        <div> 
+            <br>
+            <br>
+            <label class="div-color" >Max players:</label>
+            <input type ="text" id ="maxPlayerstxt" size ="10"/>
+            <button id ="startbtn" class = "btn btn-warning">Start</button>
+             <button disabled id = "btnscores" class="btn btn-warning ">View Scores</button>
+             <button id = "btnHome" class="btn btn-warning ">Home</button>
+            <hr>
+            <br>
+            <label class="div-color" >Game ID:</label><label id= "gameIDtxt" class="div-color" ></label>
+             </div>
+        <div>
+        <ul id="playerjoin" class ="right-align"></ul>
+        </div>
+        <br>
+        <br>
+        <div id ="table" class = "div-color"></div>
+        <br>
+        <div id="score" class="div-color widget-content"></div>
+        <br>
+        <br>
+        <div id="status" class = "div-status"></div>
+    </body>
+</html>
